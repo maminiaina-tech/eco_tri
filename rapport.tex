@@ -606,6 +606,37 @@ Le modèle analyse l'image et retourne :
 \subsection{Visualisation des Résultats}
 L'application affiche également les courbes d'apprentissage et la matrice de confusion générées lors de l'entraînement, permettant à l'utilisateur de comprendre les performances du modèle.
 
+La figure~\ref{fig:demo} présente différentes captures d'écran de l'interface utilisateur.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{demo/1.png}
+        \caption{Page d'accueil avec téléversement d'image}
+        \label{fig:demo1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{demo/2.png}
+        \caption{Résultat de prédiction avec conseil de tri}
+        \label{fig:demo2}
+    \end{subfigure}
+    \vspace{0.5cm}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{demo/3.png}
+        \caption{Histogramme des probabilités par classe}
+        \label{fig:demo3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{demo/4.png}
+        \caption{Affichage des courbes d'apprentissage}
+        \label{fig:demo4}
+    \end{subfigure}
+    \caption{Captures d'écran de l'application Eco-Tri}
+    \label{fig:demo}
+\end{figure}
+
 \section{Guide d'Utilisation}
 \begin{enumerate}
     \item Lancer l'application : \texttt{streamlit run app/app.py}
@@ -617,7 +648,7 @@ L'application affiche également les courbes d'apprentissage et la matrice de co
 \section{Lien vers le Dépôt Git}
 Le code source complet, commenté et documenté, est disponible sur :
 \begin{center}
-\url{https://github.com/[utilisateur]/eco-tri\_m2}
+\url{https://github.com/Maminiaina0601/eco_tri.git}
 \end{center}
 
 Le dépôt contient :
@@ -732,8 +763,8 @@ IEEE International Conference on Big Data, 2018.
 \section{Installation}
 \begin{lstlisting}[language=bash, caption={Commandes d'installation}]
 # Cloner le depot
-git clone https://github.com/[utilisateur]/eco-tri_m2
-cd eco-tri_m2
+git clone https://github.com/Maminiaina0601/eco_tri.git
+cd eco-tri
 
 # Installer les dependances
 pip install -r requirements.txt

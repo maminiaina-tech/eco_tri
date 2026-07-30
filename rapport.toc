@@ -1,0 +1,73 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Résumé}{3}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contexte Général}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problématique}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objectifs}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Organisation du rapport}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Étude Bibliographique}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction au Deep Learning}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Réseaux de Neurones Convolutifs (CNN)}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Fonction de Perte : Cross-Entropy}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Optimiseur Adam}{6}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Transfer Learning}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Avantages du Transfer Learning}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Stratégies d'Adaptation}{7}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Architecture ResNet18}{7}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Revue des Travaux Existants}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Classification de Déchets par Vision par Ordinateur}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Travaux Fondateurs}{8}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}TrashNet Dataset et Approches Initiales}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Approches CNN Personnalisées}{8}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Travaux Récents}{8}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}ResNet et Architectures Modernes}{8}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Approches Hybrides}{8}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Synthèse Comparative}{8}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Implémentation en Python}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Architecture Globale du Projet}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Structure du Code Source}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Modélisation : Architecture du Réseau}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Choix de l'Architecture}{10}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Stratégie de Transfer Learning}{11}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Architecture de la Tête de Classification}{11}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Implémentation du Pipeline d'Entraînement}{11}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Environnement et Configuration}{11}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Hyperparamètres}{11}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Démarche de la Boucle d'Entraînement}{12}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Implémentation de l'Application de Démonstration}{12}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Architecture de l'Application}{12}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Fonctionnalités de l'Interface}{12}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Jeu de Données}{14}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Source}{14}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Description du Dataset Original}{14}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Répartition Train / Test}{14}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Prétraitement et Augmentation}{15}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Méthodologie d'Augmentation pour l'Entraînement}{15}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Méthodologie de Transformation pour le Test et l'Inférence}{15}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}Analyse des Résultats}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Métriques d'Évaluation}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Courbes d'Apprentissage}{16}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Métriques Globales}{17}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Analyse par Classe}{17}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Matrice de Confusion}{18}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Synthèse des Résultats}{18}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Démonstration du Modèle}{19}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Application de Démonstration : Eco-Tri}{19}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Architecture de l'Application}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Fonctionnalités de l'Interface}{19}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Téléversement d'Image}{19}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Prédiction en Temps Réel}{19}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Support Multilingue}{19}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Visualisation des Résultats}{20}{subsection.7.3.4}%
+\contentsline {section}{\numberline {7.4}Guide d'Utilisation}{20}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Lien vers le Dépôt Git}{20}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Conclusion et Perspectives}{22}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusion Générale}{22}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Forces de l'Approche}{22}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Limitations}{22}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Perspectives}{22}{section.8.4}%
+\contentsline {chapter}{\numberline {A}Guide d'Installation et d'Exécution}{25}{chapter.A}%
+\contentsline {section}{\numberline {A.1}Prérequis}{25}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Installation}{25}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Entraînement du Modèle (Google Colab)}{25}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Redémarrer l'Application}{25}{section.A.4}%
