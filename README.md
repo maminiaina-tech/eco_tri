@@ -12,7 +12,7 @@ Ce projet est divisé en deux parties :
 - **Rôle** : Chargement des données, entraînement du modèle, évaluation, génération des métriques et graphiques
 - **Voir** : `colab/README_COLAB.md` pour les instructions détaillées
 
-### 💻 Partie 2 : VSCode local (Application de démo)
+### Partie 2 : VSCode local (Application de démo)
 - **Fichier** : `app/app.py`
 - **Rôle** : Interface Streamlit pour tester le modèle sur de nouvelles images
 - **Nécessite** : Le fichier `results/best_model.pth` généré par Colab
