@@ -22,11 +22,9 @@ def compile_pdf(tex_file, runs=2):
             ["pdflatex", "-interaction=nonstopmode", tex_file],
             capture_output=True,
         )
-        # Decoder en ignorant les erreurs d'encodage
         stdout = result.stdout.decode("utf-8", errors="replace")
         stderr = result.stderr.decode("utf-8", errors="replace")
 
-        # Verifier les erreurs LaTeX
         errors = [l for l in stdout.split("\n") if l.startswith("! ")]
         if errors:
             print("ERREURS DETECTEES :")
@@ -35,11 +33,11 @@ def compile_pdf(tex_file, runs=2):
         if stderr.strip():
             print(f"  Stderr: {stderr[:200]}")
 
-        # Nettoyer fichiers temporaires
-        for ext in [".aux", ".log", ".out", ".toc", ".lof", ".lot"]:
-            tmp = base + ext
-            if os.path.exists(tmp):
-                os.remove(tmp)
+    # Nettoyer fichiers temporaires (apres toutes les compilations)
+    for ext in [".aux", ".log", ".out", ".lof", ".lot"]:
+        tmp = base + ext
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
     pdf_file = base + ".pdf"
     if os.path.exists(pdf_file):
