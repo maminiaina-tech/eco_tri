@@ -108,7 +108,7 @@ def main():
         col1, col2 = st.columns([1, 1])
         
         with col1:
-            st.image(image, caption='Image uploadée', use_container_width=True)
+            st.image(image, caption='Image uploadée', width='stretch')
         
         # Prédiction
         with st.spinner("Analyse en cours..."):
@@ -159,14 +159,14 @@ def main():
     with col1:
         curves_path = 'results/training_curves.png'
         if os.path.exists(curves_path):
-            st.image(curves_path, caption='Courbes d\'apprentissage', use_container_width=True)
+            st.image(curves_path, caption='Courbes d\'apprentissage', width='stretch')
         else:
             st.info("Courbes d'apprentissage non disponibles")
     
     with col2:
         cm_path = 'results/confusion_matrix.png'
         if os.path.exists(cm_path):
-            st.image(cm_path, caption='Matrice de confusion', use_container_width=True)
+            st.image(cm_path, caption='Matrice de confusion', width='stretch')
         else:
             st.info("Matrice de confusion non disponible")
     

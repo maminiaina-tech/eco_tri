@@ -69,38 +69,75 @@
 
 \begin{titlepage}
     \begin{center}
-        \vspace*{1cm}
-        {\large École de Management et d'Innovation Technologique}\\
+        \begin{minipage}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[height=4cm]{logo/uf.jpeg}
+        \end{minipage}
+        \hfill
+        \begin{minipage}[t]{0.3\textwidth}
+            \centering
+            \includegraphics[height=4cm]{logo/emit.jpeg}
+        \end{minipage}
         \vspace{1cm}
+
+        {\large UNIVERSITÉ DE FIANARANTSOA}\\
+        \vspace{0.5cm}
+        {\large ECOLE DE MANAGEMENT ET D'INNOVATION TECHNOLOGIQUE}\\
+        \vspace{0.7cm}
+        {\large ------------------}\\
         {\Huge \textbf{Eco-Tri}}\\
+        {\large ------------------}\\
         \vspace{0.5cm}
         {\Large Classification Automatique de Déchets Recyclables}\\
         \vspace{0.5cm}
-        {\large par Vision par Ordinateur et Deep Learning}\\
-        \vspace{1.5cm}
-        {\large Projet de Réseaux de Neurones Artificielle}\\
+        {\large par Vision par Ordinateur et "Deep Learning"}\\
+        \vspace{0.5cm}
+        {\large ------------------------------------------}\\
+        {\large Projet de Réseaux de Neurones ArtificielleS}\\
         \vspace{2cm}
         \begin{tabular}{rl}
-            \textbf{Auteur :} & RAVELOARIMANANA Maminiaina Emmanuel\\
-            \textbf{Encadrant :} & [Nom de l'encadrant]\\
-            \textbf{Matière :} & [Nom de la matière]\\
-            \textbf{Établissement :} & [Ecole de Management et d'Innovation Technologique]
+            \textbf Présenté par:\\
+            \textbf{286I22 -} & RAVELOARIMANANA Maminiaina Emmanuel\\
+            \textbf{279I22 -} & RAKOTONIRINA Andrianina Laïscia\\
+            \textbf{045I22 -} & RANTO Heritina Mano Valery\\
+            \textbf{170I22 -} & RANDRIANANDRASANA Léon Etienne\\
+            \textbf{132I22 -} & ANDRIANAIVOLALA Tendrintsoa Fandresena\\
+            \vspace{0.5cm}
         \end{tabular}\\
+        \textbf{Professeur titulaire :} Docteur TAREHY Brice Evrard\\
         \vfill
-        {\large Année Universitaire 2025-2026}
+        {\large ~~ Année Universitaire 2025-2026 ~~}
     \end{center}
 \end{titlepage}
 
 \tableofcontents
 \newpage
 
+\listoffigures
+\addcontentsline{toc}{chapter}{Liste des figures}
+\newpage
+
+\listoftables
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\newpage
+
 \chapter*{Résumé}
 \addcontentsline{toc}{chapter}{Résumé}
 
-Ce rapport présente \textbf{Eco-Tri}, un système de classification automatique de déchets recyclables utilisant des techniques de Deep Learning et de Vision par Ordinateur. Le système repose sur un modèle \textbf{ResNet18} pré-entraîné sur ImageNet et fine-tuné sur un dataset de 4~272 images réparties en 5 classes (carton, métal, papier, plastique, déchet non recyclable). L'application offre une interface interactive via \textbf{Streamlit} permettant aux utilisateurs de téléverser une image et d'obtenir instantanément la catégorie prédite ainsi qu'un conseil de tri personnalisé. Les performances atteintes sont de \textbf{91\% d'accuracy} avec un F1-score macro de 0.91, démontrant la viabilité de l'approche pour une application pratique de gestion des déchets.
+La gestion des déchets constitue l'un des défis environnementaux majeurs du XXI\up{e} siècle, et l'inefficacité du tri manuel limite fortement le recyclage. Face à ce constat, ce mémoire présente \textbf{Eco-Tri}, un système automatisé de classification d'images de déchets recyclables fondé sur le Deep Learning et la vision par ordinateur. L'approche proposée repose sur un modèle \textbf{ResNet18} pré-entraîné sur ImageNet, adapté par transfert d'apprentissage (extraction de caractéristiques) à la classification de 4~272 images réparties en cinq catégories : carton, métal, papier, plastique et déchet non recyclable. Le modèle, entraîné sous PyTorch sur GPU avec un pipeline documenté d'augmentation et de prétraitement des données, atteint une \textbf{exactitude de 91\,\%} et un F1-score macro de \textbf{0.91} sur le jeu de test, dépassant l'objectif initial de 90\,\% et confirmant un bon compromis performance--efficacité. Pour rendre cette technologie accessible, une application interactive développée avec \textbf{Streamlit} permet à tout utilisateur de téléverser une image et d'obtenir instantanément la catégorie prédite, la confiance associée, ainsi qu'un conseil de tri personnalisé en français et en malgache. Les résultats obtenus démontrent la viabilité d'une solution de tri intelligent, légère et déployable sur machines modestes, contribuant ainsi à une gestion plus durable des déchets et à la sensibilisation aux enjeux du recyclage.
 
 \vspace{0.5cm}
-\textbf{Mots-clés :} Classification d'images, Deep Learning, ResNet18, Transfer Learning, Déchets recyclables, PyTorch, Streamlit
+\textbf{Mots-clés :} Classification d'images, Deep Learning, ResNet18, Transfer Learning, Déchets recyclables, PyTorch, Streamlit, Vision par ordinateur
+
+\newpage
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Waste management is one of the major environmental challenges of the 21st century, and the inefficiency of manual sorting severely limits recycling rates. Facing this issue, this thesis presents \textbf{Eco-Tri}, an automated system for classifying images of recyclable waste based on Deep Learning and computer vision. The proposed approach relies on a \textbf{ResNet18} model pre-trained on ImageNet, adapted through transfer learning (feature extraction) to classify 4,272 images into five categories: cardboard, metal, paper, plastic, and non-recyclable waste. The model, trained with PyTorch on GPU using a documented data augmentation and preprocessing pipeline, achieves \textbf{91\% accuracy} and a macro \textbf{F1-score of 0.91} on the test set, exceeding the initial 90\% target and confirming an excellent performance--efficiency trade-off. To make this technology accessible, an interactive application developed with \textbf{Streamlit} allows any user to upload an image and instantly obtain the predicted category, the associated confidence score, and a personalized sorting recommendation in French and Malagasy. The obtained results demonstrate the viability of an intelligent, lightweight sorting solution deployable on modest hardware, thus contributing to more sustainable waste management and raising awareness about recycling challenges.
+
+\vspace{0.5cm}
+\textbf{Keywords:} Image Classification, Deep Learning, ResNet18, Transfer Learning, Recyclable Waste, PyTorch, Streamlit, Computer Vision
 
 % ====================================================================
 % CHAPITRE 1 : INTRODUCTION
@@ -260,7 +297,7 @@ Le projet est divisé en deux parties complémentaires :
 \section{Structure du Code Source}
 Le code source commenté est disponible sur le dépôt Git~:
 \begin{center}
-\url{https://github.com/[utilisateur]/eco-tri\_m2}
+\url{https://github.com/maminiaina-tech/eco_tri.git}
 \end{center}
 
 \begin{verbatim}
@@ -604,37 +641,43 @@ Le modèle analyse l'image et retourne :
 \end{table}
 
 \subsection{Visualisation des Résultats}
-L'application affiche également les courbes d'apprentissage et la matrice de confusion générées lors de l'entraînement, permettant à l'utilisateur de comprendre les performances du modèle.
+L'application affiche également les courbes d'apprentissage, la matrice de confusion et le rapport de métriques générés lors de l'entraînement, permettant à l'utilisateur de comprendre les performances du modèle.
 
-La figure~\ref{fig:demo} présente différentes captures d'écran de l'interface utilisateur.
+Les figures~\ref{fig:demo1} à \ref{fig:demo5} présentent les différentes fenêtres d'affichage de l'interface utilisateur, capturées séparément.
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{demo/1.png}
-        \caption{Page d'accueil avec téléversement d'image}
-        \label{fig:demo1}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{demo/2.png}
-        \caption{Résultat de prédiction avec conseil de tri}
-        \label{fig:demo2}
-    \end{subfigure}
-    \vspace{0.5cm}
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{demo/3.png}
-        \caption{Histogramme des probabilités par classe}
-        \label{fig:demo3}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width=\textwidth]{demo/4.png}
-        \caption{Affichage des courbes d'apprentissage}
-        \label{fig:demo4}
-    \end{subfigure}
-    \caption{Captures d'écran de l'application Eco-Tri}
-    \label{fig:demo}
+    \includegraphics[width=\textwidth]{demo/1.png}
+    \caption{Fenêtre d'accueil : titre de l'application, barre latérale des paramètres et zone de téléversement d'image}
+    \label{fig:demo1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{demo/2.png}
+    \caption{Fenêtre de prédiction : image téléversée, classe prédite avec pourcentage de confiance et conseil de tri}
+    \label{fig:demo2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{demo/3.png}
+    \caption{Fenêtre d'affichage du rapport de métriques du modèle}
+    \label{fig:demo3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{demo/4.png}
+    \caption{Fenêtre des résultats du modèle : courbes d'apprentissage et matrice de confusion}
+    \label{fig:demo4}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{demo/5.png}
+    \caption{Fenêtre des paramètres de l'application : choix de la langue, informations sur le modèle et fichiers disponibles}
+    \label{fig:demo5}
 \end{figure}
 
 \section{Guide d'Utilisation}
@@ -667,17 +710,7 @@ Le dépôt contient :
 \chapter{Conclusion et Perspectives}
 
 \section{Conclusion Générale}
-Ce projet a démontré la faisabilité d'un système de classification automatique de déchets recyclables utilisant le Deep Learning. Les contributions principales sont :
-
-\begin{enumerate}
-    \item \textbf{Étude bibliographique :} Synthèse des fondamentaux du Deep Learning et des architectures CNN.
-    \item \textbf{Revue des travaux existants :} Analyse comparative des approches de classification de déchets.
-    \item \textbf{Implémentation Python :} Pipeline complet d'entraînement et d'inférence avec PyTorch.
-    \item \textbf{Jeu de données documenté :} Dataset Kaggle de 4 272 images, 5 classes, avec prétraitement et augmentation.
-    \item \textbf{Résultats :} 91\% d'accuracy, F1-score macro de 0.91, matrice de confusion détaillée.
-    \item \textbf{Démonstration :} Application Streamlit interactive bilingue (FR/MG).
-    \item \textbf{Code source :} Dépôt Git avec code commenté et documentation.
-\end{enumerate}
+Le présent mémoire a permis de concevoir, d'implémenter et d'évaluer un système complet de classification automatique de déchets recyclables, dénommé \textbf{Eco-Tri}, fondé sur les techniques de la vision par ordinateur et du Deep Learning. À l'issue d'une étude bibliographique ayant consolidé les fondements théoriques des réseaux de neurones convolutifs et du transfert d'apprentissage, puis d'une revue de l'état de l'art ayant situé notre démarche parmi les travaux existants, un modèle ResNet18 pré-entraîné sur ImageNet a été adapté par extraction de caractéristiques à la classification de 4~272 images réparties en cinq classes (carton, métal, papier, plastique et déchet non recyclable). Le pipeline d'entraînement, implémenté sous PyTorch et exécuté sur GPU, a permis d'atteindre une exactitude de \textbf{91\,\%} et un F1-score macro de \textbf{0.91} sur le jeu de test, dépassant ainsi l'objectif initial fixé à 90\,\% et confirmant la robustesse de l'approche malgré quelques confusions résiduelles entre classes visuellement proches telles que le plastique et le déchet non recyclable. Au-delà de la dimension scientifique, le projet a donné naissance à une application interactive développée avec Streamlit, dotée d'une interface bilingue français--malgache, qui rend le modèle accessible au grand public et l'accompagne de conseils de tri personnalisés, contribuant ainsi à la sensibilisation aux enjeux du recyclage. Les principales limites identifiées, à savoir le nombre restreint de classes, le léger déséquilibre du jeu de données et l'apparition modérée d'un surapprentissage en fin d'entraînement, ouvrent la voie à des perspectives prometteuses : l'enrichissement du dataset par de nouvelles catégories (verre, organique, électronique), l'exploration d'architectures plus récentes telles qu'EfficientNet ou les Vision Transformers, l'application de techniques d'augmentation avancées (MixUp, CutMix, GANs), le déploiement sur plateformes mobiles via ONNX ou TensorFlow Lite, et l'extension vers la détection d'objets multi-instances avec YOLO. En définitive, Eco-Tri constitue une preuve de concept aboutie démontrant qu'une solution de tri intelligent, à la fois performante, légère et accessible, peut significativement contribuer à une gestion plus durable des déchets et à la réduction de l'empreinte environnementale.
 
 \section{Forces de l'Approche}
 \begin{itemize}
